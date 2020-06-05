@@ -87,6 +87,24 @@ export default counterSlice.reducer;
 
 ```
 
+createSlice
+
+```
+function createSlice({
+    // An object of "case reducers". Key names will be used to generate actions.
+    reducers: Object<string, ReducerFunction | ReducerAndPrepareObject>
+    // The initial state for the reducer
+    initialState: any,
+    // A name, used in action types
+    name: string,
+    // An additional object of "case reducers". Keys should be other action types.
+    extraReducers?:
+    | Object<string, ReducerFunction>
+    | ((builder: ActionReducerMapBuilder<State>) => void)
+})
+```
+
+
 ## Counter组件
 
 ```
